@@ -9,18 +9,6 @@ num2 = input("second binary number: ")
 iter = range(len(num1) - 1, -1, -1)
 result = ""
 
-def ones(size, count):
-    for positions in combinations(range(size), count):
-        p = [0] * size
-
-        for i in positions:
-            p[i] = 1
-
-        yield tuple(p)
-
-def triples(count):
-    return ones(3, count)
-
 def addbits(p, q, carry):
     m = int(p)
     n = int(q)
