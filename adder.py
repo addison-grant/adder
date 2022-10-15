@@ -15,7 +15,7 @@ def addbits(p, q, carry):
     t = (m, n, carry)
 
     match tuple(t):
-        case (0,0,0):
+        case (0, 0, 0):
             return 0, 0
         case (1, 0, 0) | (0, 1, 0) | (0, 0, 1):
             return 1, 0
